@@ -1,6 +1,7 @@
 # Overview
 
-このアプリケーションは PHP, Laravel v12, PostgreSQL, Laravel Sail, HTML, CSS, JS で構成されるダッシュボードです。
+このアプリケーションは PHP, Laravel v12, PostgreSQL, Laravel Sail, HTML, CSS, JS で構成されるダッシュボードです。  
+vite, tailwindcss, livewire も使われています。
 
 # デザインガイド
 
