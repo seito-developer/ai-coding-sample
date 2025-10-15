@@ -203,6 +203,7 @@ new class extends Component {
                             icon="shield-exclamation"
                             icon:variant="outline"
                             wire:click="disable"
+                            class="rounded-[5px]"
                         >
                             {{ __('Disable 2FA') }}
                         </flux:button>
@@ -223,6 +224,7 @@ new class extends Component {
                         icon="shield-check"
                         icon:variant="outline"
                         wire:click="enable"
+                        class="rounded-[5px]"
                     >
                         {{ __('Enable 2FA') }}
                     </flux:button>
@@ -239,8 +241,8 @@ new class extends Component {
     >
         <div class="space-y-6">
             <div class="flex flex-col items-center space-y-4">
-                <div class="p-0.5 w-auto rounded-full border border-stone-100 dark:border-stone-600 bg-white dark:bg-stone-800 shadow-sm">
-                    <div class="p-2.5 rounded-full border border-stone-200 dark:border-stone-600 overflow-hidden bg-stone-100 dark:bg-stone-200 relative">
+                <div class="p-0.5 w-auto border border-stone-100 dark:border-stone-600 bg-white dark:bg-stone-800 shadow-sm">
+                    <div class="p-2.5 border border-stone-200 dark:border-stone-600 overflow-hidden bg-stone-100 dark:bg-stone-200 relative">
                         <div class="flex items-stretch absolute inset-0 w-full h-full divide-x [&>div]:flex-1 divide-stone-200 dark:divide-stone-300 justify-around opacity-50">
                             @for ($i = 1; $i <= 5; $i++)
                                 <div></div>
@@ -282,7 +284,7 @@ new class extends Component {
                     <div class="flex items-center space-x-3">
                         <flux:button
                             variant="outline"
-                            class="flex-1"
+                            class="flex-1 rounded-[5px]"
                             wire:click="resetVerification"
                         >
                             {{ __('Back') }}
@@ -290,7 +292,7 @@ new class extends Component {
 
                         <flux:button
                             variant="primary"
-                            class="flex-1"
+                            class="flex-1 rounded-[5px]"
                             wire:click="confirmTwoFactor"
                             x-bind:disabled="$wire.code.length < 6"
                         >
@@ -304,7 +306,7 @@ new class extends Component {
                 @enderror
 
                 <div class="flex justify-center">
-                    <div class="relative w-64 overflow-hidden border rounded-lg border-stone-200 dark:border-stone-700 aspect-square">
+                    <div class="relative w-64 overflow-hidden border border-stone-200 dark:border-stone-700 aspect-square">
                         @empty($qrCodeSvg)
                             <div class="absolute inset-0 flex items-center justify-center bg-white dark:bg-stone-700 animate-pulse">
                                 <flux:icon.loading/>
@@ -321,7 +323,7 @@ new class extends Component {
                     <flux:button
                         :disabled="$errors->has('setupData')"
                         variant="primary"
-                        class="w-full"
+                        class="w-full rounded-[5px]"
                         wire:click="showVerificationIfNecessary"
                     >
                         {{ $this->modalConfig['buttonText'] }}
@@ -351,7 +353,7 @@ new class extends Component {
                             }
                         }"
                     >
-                        <div class="flex items-stretch w-full border rounded-xl dark:border-stone-700">
+                        <div class="flex items-stretch w-full border dark:border-stone-700">
                             @empty($manualSetupKey)
                                 <div class="flex items-center justify-center w-full p-3 bg-stone-100 dark:bg-stone-700">
                                     <flux:icon.loading variant="mini"/>
@@ -366,7 +368,7 @@ new class extends Component {
 
                                 <button
                                     @click="copy()"
-                                    class="px-3 transition-colors border-l cursor-pointer border-stone-200 dark:border-stone-600"
+                                    class="px-3 transition-colors border-l cursor-pointer border-stone-200 dark:border-stone-600 rounded-[5px]"
                                 >
                                     <flux:icon.document-duplicate x-show="!copied" variant="outline"></flux:icon>
                                     <flux:icon.check
