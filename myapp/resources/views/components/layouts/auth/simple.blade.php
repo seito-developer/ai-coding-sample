@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <div class="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
-            <div class="flex w-full max-w-sm flex-col gap-2">
-                <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
-                    <span class="flex h-9 w-9 mb-1 items-center justify-center rounded-md">
-                        <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
-                    </span>
-                    <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
-                </a>
-                <div class="flex flex-col gap-6">
-                    {{ $slot }}
+    <body class="auth-body min-h-screen flex flex-col">
+        <div class="flex-1 w-full">
+            <div class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center gap-12 px-6 py-12 lg:flex-row lg:items-stretch lg:gap-16 lg:px-12 lg:py-24">
+                <div class="relative hidden flex-1 border border-[#3261ab21] bg-white/40 px-10 py-12 shadow-[0_24px_56px_rgba(33,57,116,0.14)] lg:flex">
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(50,97,171,0.18),transparent_65%)]"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#3261ab12] to-transparent"></div>
+                    <div class="relative z-[1] flex w-full flex-col justify-between">
+                        <div class="flex flex-col gap-8">
+                            <span class="flex h-12 w-12 items-center justify-center border border-[#D8E212] bg-[#D8E21233] text-[#3261AB] shadow-[0_14px_28px_rgba(216,226,18,0.3)]">
+                                <x-app-logo-icon class="h-7 w-7 fill-current" />
+                            </span>
+                        </div>
+                        <div class="flex gap-6">
+                            <div aria-hidden="true" class="flex-1 border border-[#3261ab1f] bg-[#3261ab0d]"></div>
+                            <div aria-hidden="true" class="flex-1 border border-[#3261ab1f] bg-[#d8e2121a]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex w-full max-w-xl flex-1 flex-col border border-[#3261ab21] bg-white px-8 py-12 shadow-[0_24px_56px_rgba(33,57,116,0.14)] sm:px-12 sm:py-14">
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_-20%,rgba(216,226,18,0.28),transparent_65%)]"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#3261ab12] to-transparent"></div>
+                    <div class="relative z-[1] mb-10 flex items-center gap-6">
+                        <a href="{{ route('home') }}" class="inline-flex items-center justify-center rounded-[5px] border border-[#3261ab33] bg-white/70 px-4 py-2 text-base font-medium text-[#3261AB] transition duration-200 ease-out hover:border-[#3261AB] hover:bg-[#3261AB] hover:text-white" wire:navigate>
+                            <x-app-logo-icon class="h-6 w-6 text-current" />
+                        </a>
+                        <div aria-hidden="true" class="h-[2px] flex-1 bg-[#3261ab26]"></div>
+                    </div>
+                    <div class="relative z-[1] flex flex-col gap-10">
+                        {{ $slot }}
+                    </div>
                 </div>
             </div>
         </div>
