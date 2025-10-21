@@ -1,0 +1,13 @@
+body {
+    background-color: #f00;
+}
+
+body.welcome-body {
+    background-color: #efefef;
+    color: #1c2337;
+    font-family: 'Noto Sans Japanese', 'Noto Sans JP', sans-serif;
+}
+
+.welcome-heading {
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+}
