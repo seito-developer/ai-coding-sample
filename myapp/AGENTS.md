@@ -5,17 +5,21 @@ vite, tailwindcss, livewire も使われています。
 
 # デザインガイド
 
+## 概要
+
+-   全体的にフラットデザインで、親しみやすさを感じるデザインにする
+-   信頼感とスマートさのあるデザイン
+
 ## 配色
 
--   bgColor: #FFFFFF
--   baseColor: #3261AB
--   subColor: #007FB1
--   subColor: #D8E212
+-   背景色: #efefef
+-   ベースカラー（基本となる色。見出しやヘッダーなど、面積の大きい要素に使う色）: #3261AB
+-   アクセントカラー（ボタンやタブなどに使う色）: #D8E212
 
 ## Font
 
--   Base: Noto Sans Japanese
--   Accent: Montserrat
+-   プレーンテキストに使うフォント: Noto Sans Japanese
+-   見出しに使うフォント: Montserrat
 
 ## Padding & Margin & Font Size
 
