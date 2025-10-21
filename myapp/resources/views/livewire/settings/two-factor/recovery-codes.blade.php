@@ -46,7 +46,7 @@ new class extends Component {
 }; ?>
 
 <div
-    class="py-6 space-y-6 border shadow-sm border-zinc-200 dark:border-white/10"
+    class="py-6 space-y-6 border shadow-sm rounded-xl border-zinc-200 dark:border-white/10"
     wire:cloak
     x-data="{ showRecoveryCodes: false }"
 >
@@ -70,7 +70,6 @@ new class extends Component {
                 @click="showRecoveryCodes = true;"
                 aria-expanded="false"
                 aria-controls="recovery-codes-section"
-                class="rounded-[5px]"
             >
                 {{ __('View Recovery Codes') }}
             </flux:button>
@@ -83,7 +82,6 @@ new class extends Component {
                 @click="showRecoveryCodes = false"
                 aria-expanded="true"
                 aria-controls="recovery-codes-section"
-                class="rounded-[5px]"
             >
                 {{ __('Hide Recovery Codes') }}
             </flux:button>
@@ -94,7 +92,6 @@ new class extends Component {
                     icon="arrow-path"
                     variant="filled"
                     wire:click="regenerateRecoveryCodes"
-                    class="rounded-[5px]"
                 >
                     {{ __('Regenerate Codes') }}
                 </flux:button>
@@ -115,7 +112,7 @@ new class extends Component {
 
                 @if (filled($recoveryCodes))
                     <div
-                        class="grid gap-1 p-4 font-mono text-sm bg-zinc-100 dark:bg-white/5"
+                        class="grid gap-1 p-4 font-mono text-sm rounded-lg bg-zinc-100 dark:bg-white/5"
                         role="list"
                         aria-label="Recovery codes"
                     >

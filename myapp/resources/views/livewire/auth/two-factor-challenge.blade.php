@@ -80,7 +80,7 @@
                     <flux:button
                         variant="primary"
                         type="submit"
-                        class="w-full rounded-[5px]"
+                        class="w-full"
                     >
                         {{ __('Continue') }}
                     </flux:button>
