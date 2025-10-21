@@ -6,21 +6,6 @@
     <body class="auth-body min-h-screen flex flex-col">
         <div class="flex-1 w-full">
             <div class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center gap-12 px-6 py-12 lg:flex-row lg:items-stretch lg:gap-16 lg:px-12 lg:py-24">
-                <div class="relative hidden flex-1 border border-[#3261ab21] bg-white/40 px-10 py-12 shadow-[0_24px_56px_rgba(33,57,116,0.14)] lg:flex">
-                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(50,97,171,0.18),transparent_65%)]"></div>
-                    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#3261ab12] to-transparent"></div>
-                    <div class="relative z-[1] flex w-full flex-col justify-between">
-                        <div class="flex flex-col gap-8">
-                            <span class="flex h-12 w-12 items-center justify-center border border-[#D8E212] bg-[#D8E21233] text-[#3261AB] shadow-[0_14px_28px_rgba(216,226,18,0.3)]">
-                                <x-app-logo-icon class="h-7 w-7 fill-current" />
-                            </span>
-                        </div>
-                        <div class="flex gap-6">
-                            <div aria-hidden="true" class="flex-1 border border-[#3261ab1f] bg-[#3261ab0d]"></div>
-                            <div aria-hidden="true" class="flex-1 border border-[#3261ab1f] bg-[#d8e2121a]"></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="relative flex w-full max-w-xl flex-1 flex-col border border-[#3261ab21] bg-white px-8 py-12 shadow-[0_24px_56px_rgba(33,57,116,0.14)] sm:px-12 sm:py-14">
                     <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_-20%,rgba(216,226,18,0.28),transparent_65%)]"></div>
                     <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#3261ab12] to-transparent"></div>
