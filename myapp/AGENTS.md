@@ -14,7 +14,7 @@ vite, tailwindcss, livewire も使われています。
 
 -   インライン CSS は使わないこと
 -   CSS はなるべく TailwindCSS のクラスのみで実装すること
--   どうしても独自にクラスと CSS を追記する場合は別途 CSS ファイルを用いて
+-   どうしても独自にクラスと CSS を追記する場合は別途 custom.css に記述すること
 
 ## 配色
 
