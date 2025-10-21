@@ -5,19 +5,29 @@ body {
 body.welcome-body {
     background-color: #efefef;
     color: #1c2337;
-    font-family: 'Noto Sans Japanese', 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans Japanese", "Noto Sans JP", sans-serif;
 }
 
 .welcome-heading {
-    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
 }
 
 body.auth-body {
     background-color: #efefef;
     color: #1c2337;
-    font-family: 'Noto Sans Japanese', 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans Japanese", "Noto Sans JP", sans-serif;
 }
 
 .auth-heading {
-    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
+}
+
+body.app-body {
+    background-color: #efefef;
+    color: #1c2337;
+    font-family: "Noto Sans Japanese", "Noto Sans JP", sans-serif;
+}
+
+.dashboard-heading {
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
 }
