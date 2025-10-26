@@ -44,3 +44,20 @@ composer run dev
 ```
 
 シンプルに開発サーバーのみを立ち上げたい場合は `php artisan serve`、フロントエンドの HMR を使う場合は `npm run dev` を個別に実行してください。
+
+## よく使うコマンド
+
+- 初期セットアップ (マイグレーションとビルドまで一括): `composer run setup`
+- 開発サーバー/ビルダー同時起動: `composer run dev`
+- 本番ビルド: `npm run build`
+- テスト実行: `php artisan test` または `composer run test`
+
+## プロジェクト構成のヒント
+
+- `app/` — ドメインロジックと Livewire コンポーネント
+- `resources/views/` — Volt コンポーネントや Blade テンプレート
+- `resources/js/` — フロントエンドリソース (Vite エントリーポイント含む)
+- `routes/web.php` — Web ルーティング定義
+- `database/migrations/` — データベースマイグレーション
+
+必要に応じて `.env` 内のアプリ名や接続情報を更新し、`php artisan migrate --seed` で初期データの投入も行えます。
